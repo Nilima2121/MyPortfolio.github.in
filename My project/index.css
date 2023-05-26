@@ -1,0 +1,337 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hero{
+  height: 100vh;
+  width:100%;
+  background-image: url(https://cdn.pixabay.com/photo/2023/02/08/08/50/frequency-wave-7776034_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+
+ }
+
+.navbar{
+  background-color: black;
+  color: white;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left{
+  font-size: 20px
+  
+}
+
+.checkbtn,#check{
+  display: none;
+}
+
+
+.right ul{
+  display: flex;
+  list-style: none;
+}
+
+.right ul li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 1s;
+  /* cursor: pointer; */
+
+}
+@media screen and (max-width:800px){
+  .list{
+      height: 100vh;
+      width: 100%;
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: 100%;
+      text-align: center;
+      transition: all 1s;
+  }
+  .checkbtn{
+      display: block;
+  }
+  #check:checked~ul{
+      left: 0%;
+  }
+}
+    /* .navbar ul li a:hover{
+      background-color: white;
+      color:black
+      box-shadow:0 0 10px white;
+    } */
+
+
+.hero-section {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .post-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .post-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .post-section a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+/* ------------------------------------------------------------------------- */
+
+#Portfolio{
+  display: flex;
+  flex-direction: column;
+  background-color: grey
+}
+#Portfolio h1{
+  margin: 60px;
+  justify-content: center
+   
+}
+  .gallary{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .gallary img{
+      width: 350px;
+      height: 500px;
+      padding: 10px;
+      margin: 10px;
+  }
+     
+     
+  
+  .gallary img:hover{
+      background-color: white;
+      cursor: pointer;
+  }
+/* ----------------------------------------------------------------------- */
+#education{
+  height: 90vh;
+width:100%;
+background-image: url(https://cdn.pixabay.com/photo/2020/08/13/08/44/desk-5484560_960_720.jpg);
+background-size: contain;
+background-position: center;
+
+  
+}
+#education h1{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color:black;
+}
+#education h1{
+  margin: 60px;
+  text-align: center;
+}
+.columns{
+  display: grid;
+  /* grid-template-columns:auto auto; */
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+.box{
+  height: 250px;
+  width: 275px;
+  background-color: yellowgreen;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+ 
+ 
+}
+.box h2{
+  background-color: yellowgreen;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+
+ }
+.box p{
+  /* background-color: black; */
+  color: white;
+  font-size: .8rem;
+}
+@media screen and (max-width:800px){
+  .img{
+      height: 100vh;
+      width: 100%;
+      /* background-color: grey; */
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      /* top: 80px;
+      left: 100%; */
+      text-align: center;
+      /* transition: all 1s; */
+  }
+}  
+/* --------------------------------------------------------------------- */
+#about{
+  width: 100%;
+  padding: 100px 0px;
+ 
+  background-color:rgb(23, 22, 22);
+}
+@media screen and (max-width:800px){
+  #about{
+    /* width: 400px; */
+    padding: 20px;
+    width: 700px;
+    /* padding: 20px; */
+    margin-left: -400px;
+  }
+}
+/* .about img{lize;
+  padding: 20px;
+} */
+.ab img{
+  width: 450px;
+  /* padding: 20px; */
+  margin-left: -300px;
+}
+.ab p{
+  color: wheat;
+  letter-spacing: 1px;
+  /* line-height: 30px;
+   margin-left:400px;
+  font-size: 20px */
+  /* height: auto;
+  width: 500px; */
+  margin-left: 800px;
+  padding-right: 20px;
+  color: #000000 solid;
+  font-size: 20px;
+}
+.ab{
+  width: 600px;
+  text-align: center;
+  align-items: center;
+}
+.div1{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ab h2{
+  color: whitesmoke;
+  /* letter-spacing: 2px; */
+  text-transform: capitalize;
+  font-size: 30px;
+  font-style: italic;
+  margin-left: 600px;
+  margin-bottom: 20px;
+  margin-top: -250px;
+}
+.ab h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-left: 400px;
+  /* margin-bottom: 25px; */
+  text-transform: capita;
+  margin-bottom: 45px;
+
+}
+@media screen and (max-width:800px) {
+   .ab img{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: fixed; */
+    /* height:400px;
+    width:300px */
+
+    width: 500px;
+    height: 100vh;
+  margin-right: 500px;
+    background-color: grey;
+    display: flex;
+    /* flex-direction: column; */
+    /* position: fixed; */
+  }
+  .ab{
+    margin-top:600px;
+    text-align: right;
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+  
+}
+------------------------------------- */
+.footer{
+  margin-top:-500px;
+  display: flex;
+  
+}
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover {
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* .social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover {
+  color: #008000;
+}
+.fab {
+  color: #000000;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  
+} */
+
+  

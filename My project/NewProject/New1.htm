@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="New1.css">
+    <link  href="https://fonts.googleapis.com/icons?family=Material+I" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.google.com/icons?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+     <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.HV1hdgq9YfbhWA3YXfinvgHaEo&pid=Api&P=0" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name">Coding is so</p>
+            <p class="artist">easy</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+           
+           <i id="repeat-plist" class="material-icons" title="playlist looped">repeat</i>
+           <i id="prev" class="material-icons">skip_previous</i>
+           <div class="play-pause">
+               <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons">skip_next</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class=" list marerial-icons">queue_music</i>
+                     <span>music list</span>
+
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+                <li li-index="1">
+                    <div class="row">
+                        <span>Song Name</span>
+                        <p>Artist Name</p>
+                    </div>
+                   <span id="" class="audio-duration">0:00</span>
+                   <audio src="./audio/Ved-Lavlay(PagalWorldl).mp3"></audio>
+                </li>
+            </ul>
+        </div>
+     </div>
+</body>
+</html>

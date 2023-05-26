@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+   .hero{
+    height: 100vh;
+    width:100%;
+    background-image: url(https://cdn.pixabay.com/photo/2023/01/25/18/14/landscape-7744216_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+
+   }
+  
+  .navbar{
+    background-color:grey;
+    color: white;
+    line-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+    top:0;
+    position: sticky;
+  }
+  
+  .checkbtn,#check{
+    display: none;
+  }
+  
+  .right ul{
+    display: flex;
+    list-style: none;
+  }
+  
+  .right ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 1s;
+    /* cursor: pointer; */
+  
+  }
+  @media screen and (max-width:800px){
+    .list{
+        height: 100vh;
+        width: 100%;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 1s;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked~ul{
+        left: 0%;
+    }
+  }
+  /* ----------------------------------------------- */
+  .hero-section {
+      text-align: center;
+      padding: 100px 0;
+    }
+  
+    .post-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+    }
+  
+    .post-section img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .post-section a {
+      color: #333;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+/* ============================================================================================ */
+
+    #portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+#portfolio h1{
+    margin: 60px;
+    justify-content: center
+}
+    .gallary{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .gallary img{
+        width: 350px;
+        height: 500px;
+        padding: 10px;
+        margin: 10px;
+    }
+       
+       
+    
+    .gallary img:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+/* ----------------------------------------------------------------------------------------- */
+    #education{
+        height: 90vh;
+    width:100%;
+    background-image: url(https://cdn.pixabay.com/photo/2023/01/15/16/20/library-7720589_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+
+        
+    }
+    #education h1{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color:black;
+    }
+    #education h1{
+        margin: 60px;
+        text-align: center;
+    }
+    .columns{
+        display: grid;
+        /* grid-template-columns:auto auto; */
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: auto;
+        justify-content: center;
+    
+    }
+    .box{
+        height: 250px;
+        width: 275px;
+        background-color: yellowgreen;
+        /* background-color: rgba(255, 255, 255, 0.1); */
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+       
+    }
+    .box h2{
+        background-color: yellowgreen;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      
+       }
+     .box p{
+        /* background-color: black; */
+        color: white;
+        font-size: .8rem;
+     }  
+
+     /* --------------------------------------------------------- */
+     /* #About{
+        display: flex;
+        flex-wrap: wrap;
+        height: 200vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        
+      }
+      
+      
+       /* .About h1{
+        text-align: center;
+        justify-content: center;
+      } */
+      /* .ab{
+        height: 80vh;
+        text-align: left;
+        position: relative;
+        margin-top: -700px;
+      }
+      .ab h1{
+        color: white;
+        font-size: 80px;
+        margin-top: -600px;
+      }
+      .ab img{
+        width: 700px;
+        padding: 20px;
+      }
+      .ab h2{
+        font-size: 30px;
+        color: black;
+        margin-top: -450px;
+        margin-left: 800px;
+      }
+      .ab p{
+        margin-left: 800px;
+        padding-right: 20px;
+        color: #000000 solid;
+        font-size: 20px;
+        
+        
+      }
+      @media screen and (max-width:800px) {
+        .ab img{
+            width: 100%;
+            height: 50vh;
+            background-color: grey;
+            display: flex;
+            /* flex-direction: column; */
+            /* position: fixed;  */
+            /* top: 80px; */
+            /* left: 100%; */
+            /* text-align: center; */
+            /* transition: all 1s; */
+        /* }
+        .ab h2{
+            text-align: right;
+        }
+      
+        } */ 
+    /* --------------------------------------- */
+
+#Contact{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 400px; */
+    /* flex-direction: column; */
+    height: 90vh;
+    width: 100%;
+    border: 1px solid red;
+    margin-top: -900px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/26/01/13/telephone-1223310__340.jpg);
+    /* background-size: cover; */
+    /* text-align: center;
+   justify-content: center;
+    */
+    
+
+}
+
+/* #Contact{
+    height: 90vh;
+    width:100%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/26/01/13/telephone-1223310__340.jpg);
+    background-size: cover;
+    /* background-position: center; */
+/* } */ 
+ .heading  {
+    color: red;
+    margin: 50px;
+   text-align: center;
+   /* justify-content: center; */
+   align-items: center;
+    /* margin-left: 400px;  */
+}  
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    margin-left: 100px;
+    width: 100%;
+    border: none;
+    outline: 1;
+    align-items: center;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    width:100% ;
+    height:200px;
+    margin-left: 100px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 50%;
+    margin-left: 160px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------------ */
+ /* footer section */
+ .footer{
+    margin-top:  20px;
+    
+ }
+ .social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+/* ================================================= */
+
+body{
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  display: flex;
+  width: 920px;
+  height: auto;
+  margin: 30px auto;
+}
+.box{
+  width: 32%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-right: 1%;
+  background: white;
+  border-radius: 10px;
+  transition: 0.9;
+}
+.box:hover{
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  cursor: pointer;
+}
+img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h3,p{
+  text-align: center;
+  color: rgb(104, 92, 92);
+}
+p{
+  font-size: 15px;
+  padding: 0 5px;
+}
+@media (max-width: 800px){
+  .container{
+      width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .container{
+      width: 85%;
+      display: block;
+  }
+  .box{
+      width: 100%;
+      margin-bottom: 4%;
+  }
+}
+
+
+
+
+/*  */
